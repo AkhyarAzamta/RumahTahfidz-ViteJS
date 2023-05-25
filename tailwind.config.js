@@ -6,6 +6,10 @@ export default {
   ],
   theme: {
     extend: {},
+    fontFamily: {
+      Shojumaru: ["Shojumaru, cursive"],
+      Recursive: ["Recursive, sans-serif"]
+    }
   },
   plugins: [],
 }
