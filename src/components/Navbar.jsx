@@ -10,7 +10,7 @@ import {
 import { BsPerson } from 'react-icons/bs'
 import { GrProjects } from 'react-icons/gr'
 
-const linkClass = 'text-teal-600 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-md font-bold hover:scale-90 ease-in duration-200';
+const linkClass = 'max-lg:text-base text-teal-600 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-md font-bold hover:scale-90 ease-in duration-200';
 const navDetail = [
     {
         id: 1,
@@ -58,7 +58,8 @@ const Navbar = () => {
         <div>
             <AiOutlineMenu
                 onClick={handleNav}
-                className='absolute top-4 right-4 z-[99] md:hidden'
+                className='absolute top-4 right-4 z-[99]  md:hidden'
+                size={28}
             />
             {nav ? (
                 <div className='fixed w-full h-screen bg-white/90 flex flex-col justify-center items-center z-20'>
@@ -85,12 +86,12 @@ const Navbar = () => {
                                     src="/logo.png"
                                     alt="Logo"
                                 />
-                                <div>
-                                <p className='text-teal-600 text-2xl font-extrabold font-Shojumaru'>Rumah Tahfidz</p>
-                                <p className='text-teal-600 text-xl font-Recursive font-bold'>Ummi Samsah</p>
+                                <div className='flex flex-col justify-center'>
+                                <p className='text-teal-600 text-2xl max-sm:text-lg max-lg:text-lg font-extrabold font-Shojumaru'>Rumah Tahfidz</p>
+                                <p className='text-teal-600 text-xl max-sm:text-sm max-lg:text-base font-Recursive font-bold'>Ummi Samsah</p>
                                 </div>
                             </div>
-                            <div className="hidden lg:block lg:ml-10">
+                            <div className="max-md:hidden lg:ml-10">
                                 <div className="flex space-x-4">
                                     {navDetail.map((item) => (
                                         <a
@@ -110,41 +111,6 @@ const Navbar = () => {
                     </div>
                 </div>
             </nav>
-            {/* <a
-                  href="#"
-                  className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-                >
-                  Home
-                </a>
-                <a
-                  href="#"
-                  className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-                >
-                  About
-                </a>
-                <a
-                  href="#"
-                  className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-                >
-                  Services
-                </a>
-                {/* Tambahkan item menu lainnya di sini 
-              </div>
-            </div> 
-                */}
-            {/* <div className='md:block hidden fixed top-[5%] z-10'>
-                <div className='flex flex-col'>
-                {navDetail.map((item) => (
-                    <a
-                    key={item.id}
-                    href={item.href}
-                    className={item.linkClass}
-                    >
-                        {item.icon}
-                    </a>
-                ))}
-                </div>
-            </div> */}
         </div>
     );
 };

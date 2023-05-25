@@ -7,6 +7,7 @@ const App = () => {
     <div>
       <Navbar />
       <Hero />
+      <Hero />
       {/* <div className="h-64 bg-gray-100">Content</div> */}
     </div>
   );
