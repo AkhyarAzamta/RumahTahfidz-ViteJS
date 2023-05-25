@@ -82,7 +82,7 @@ const Navbar = () => {
                             <div className="flex">
                                 <img
                                     className="h-16 w-16"
-                                    src="../public/logo.png"
+                                    src="/logo.png"
                                     alt="Logo"
                                 />
                                 <div>
