@@ -1,14 +1,14 @@
 import React from "react";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
+import Tentang from "./components/Tentang";
 
 const App = () => {
   return (
     <div>
       <Navbar />
       <Hero />
-      <Hero />
-      {/* <div className="h-64 bg-gray-100">Content</div> */}
+      <Tentang />
     </div>
   );
 };

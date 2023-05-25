@@ -15,7 +15,7 @@ const navDetail = [
     {
         id: 1,
         name: 'Beranda',
-        href: '#main',
+        href: '#beranda',
         icon: <AiOutlineHome size={20} />,
         linkClassName: 'w-[75%] flex justify-center items-center rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 hover:scale-110 ease-in duration-200',
         linkClass: 'text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium',
@@ -23,7 +23,7 @@ const navDetail = [
     {
         id: 2,
         name: 'Tentang',
-        href: '#main',
+        href: '#tentang',
         icon: <GrProjects size={20} />,
         linkClassName: 'w-[75%] flex justify-center items-center rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 hover:scale-110 ease-in duration-200',
         linkClass: 'text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium',
@@ -77,7 +77,7 @@ const Navbar = () => {
             ) : (
                 ''
             )}
-            <nav className="bg-white shadow-md">
+            <nav className="bg-white shadow-md fixed z-50 w-full">
                 <div className="max-w-7xl mx-auto px-2 sm:px-4 lg:px-8">
                     <div className="relative flex items-center justify-between h-16">
                             <div className="flex">
