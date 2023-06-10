@@ -23,7 +23,7 @@ const Tentang = () => {
     };
 
     return (
-        <section className="container items-center justify-center sm:mx-auto px-4 pt-24">
+        <section className="container items-center justify-center sm:mx-auto px-4 pt-6">
             <motion.h2
                 id="tentang"
                 initial="hidden"
