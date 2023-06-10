@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import Carousel from "./CarouselComponent";
 import image1 from "../assets/foto/image1.jpeg";
 import image2 from "../assets/foto/image2.jpeg"; 
 import image3 from "../assets/foto/image3.jpeg";
@@ -23,7 +24,7 @@ const Tentang = () => {
     };
 
     return (
-        <section className="container items-center justify-center sm:mx-auto px-4 pt-6">
+        <section className="container max-sm:h-screen items-center justify-center sm:mx-auto px-4 pt-6">
             <motion.h2
                 id="tentang"
                 initial="hidden"
@@ -47,9 +48,8 @@ const Tentang = () => {
                     beberapa program unggulan, termasuk program murajaah hafalan, tahsin, dan tahfidz 
                     aqidah ahlaq dengan pendekatan praktis dalam pembelajarannya, serta fleksibilitas waktu belajar.      
                     </motion.p>
-
-                
             </div>
+            <Carousel />
         </section>
     );
 };
