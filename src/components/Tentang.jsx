@@ -24,13 +24,13 @@ const Tentang = () => {
     };
 
     return (
-        <section className="container max-sm:h-screen items-center justify-center sm:mx-auto px-4 pt-6">
+        <section className="bg-[url(/bg.jpg)] bg-center bg-cover px-11 max-sm:h-screen w-full items-center justify-center py-6">
             <motion.h2
                 id="tentang"
                 initial="hidden"
                 animate="visible"
                 variants={fadeInVariants}
-                className="text-teal-600 text-4xl font-bold mb-4 flex items-center justify-center font-Recursive"
+                className="text-teal-600 sm:text-4xl text-3xl font-bold mb-4 flex items-center justify-center font-Recursive"
             >
                 Tentang Rumah Tahfidz
             </motion.h2>

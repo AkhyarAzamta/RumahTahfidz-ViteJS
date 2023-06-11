@@ -2,11 +2,11 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <section id="beranda" className="relative bg-[url(/hero.jpeg)] bg-cover bg-center bg-no-repeat">
-      <div className="absolute inset-0 bg-white/75 sm:bg-white/75 sm:from-white/95 sm:to-white/25 ltr:sm:bg-gradient-to-r rtl:sm:bg-gradient-to-l" />
+    <section id="beranda" className="relative ">
+      <div className="absolute inset-0 bg-[url(/quran.png)] bg-center bg-contain" />
       <div className="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-screen h-screen lg:items-center lg:px-8">
         <div className="max-w-xl ltr:sm:text-left mt-28 rtl:sm:text-right">
-          <h1 className="text-3xl font-extrabold sm:text-5xl">
+          <h1 className="text-3xl font-extrabold sm:text-4xl">
             Rumah Tahfidz Ummi Samsah.
             <strong className="block font-extrabold text-teal-600">
               Generasi Terbaik Qurani

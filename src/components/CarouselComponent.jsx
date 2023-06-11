@@ -10,15 +10,15 @@ const CarouselComponent= () => {
     <Carousel showArrows={true} showThumbs={false} className="m-6 sm:w-full sm:max-w-lg sm:mx-auto">
       <div>
         <img src={mypic} alt="Image 1" />
-        <p className="legend">Deskripsi Gambar 1</p>
+        {/* <p className="legend">Deskripsi Gambar 1</p> */}
       </div>
       <div>
         <img src={mypic2} alt="Image 2" />
-        <p className="legend">Deskripsi Gambar 2</p>
+        {/* <p className="legend">Deskripsi Gambar 2</p> */}
       </div>
       <div>
         <img src={mypic3} alt="Image 3" />
-        <p className="legend">Deskripsi Gambar 3</p>
+        {/* <p className="legend">Deskripsi Gambar 3</p> */}
       </div>
     </Carousel>
   );

@@ -11,7 +11,7 @@ import { BsPerson } from 'react-icons/bs'
 import { GrProjects } from 'react-icons/gr'
 import { Link } from 'react-scroll';
 
-const linkClass = 'max-lg:text-base cursor-pointer text-teal-600 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-md font-bold hover:scale-90 ease-in duration-200';
+const linkClass = 'max-lg:text-base cursor-pointer text-black hover:bg-gradient-to-r from-teal-700 via-teal-400 to-green-500 rounded-3xl hover:text-white px-3 py-2 text-md font-bold hover:scale-90 ease-in duration-200';
 const navDetail = [
     {
         id: 1,
@@ -117,10 +117,13 @@ const Navbar = () => {
                                         {item.name}
                                     </Link>
                                 ))}
-                                <a href='#' className='flex items-center bg-teal-400 p-2 rounded-md font-bold hover:scale-110 ease-in duration-200'>
+                                <div className='bg-black bg-gradient-to-r from-teal-700 via-teal-400 to-green-500 rounded-2xl'>
+                                    
+                                <a href='#' className='flex m-1 items-center bg-white p-1 px-4 rounded-xl font-bold hover:scale-110 ease-in duration-200'>
                                     Daftar
-                                    <AiOutlineArrowRight size={20} />
+                                    {/* <AiOutlineArrowRight size={20} /> */}
                                 </a>
+                                </div>
                             </div>
                         </div>
                     </div>
